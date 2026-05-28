@@ -949,7 +949,7 @@ function HabitsPage() {
             <div key={i} style={{ textAlign: "center", fontFamily: sans, fontSize: 11, color: C.inkMute, fontWeight: 500 }}>{d}</div>
           ))}
           {habits.map((h) => (
-            <React.Fragment key={h.id}>
+            <div key={h.id}>
               <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
                 <span style={{ fontSize: 18 }}>{h.icon}</span>
                 <div>
@@ -964,7 +964,7 @@ function HabitsPage() {
                   </div>
                 </div>
               ))}
-            </React.Fragment>
+            </div>
           ))}
         </div>
       </Card>
