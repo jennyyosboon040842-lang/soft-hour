@@ -1015,7 +1015,7 @@ function HabitsPage() {
             <p style={{ fontFamily: sans, fontSize: 12, color: C.inkMute, marginBottom: 8 }}>Color:</p>
             <div style={{ display: "flex", gap: 8, marginBottom: 18 }}>
               {H_COLORS.map((c, i) => (
-                <div key={i} onClick={() => setNewH({ ...newH, color: c })} style={{ width: 22, height: 22, borderRadius: "50%", background: c, border: newH.color === c ? `3px solid ${C.ink}` : "3px solid transparent", cursor: "pointer" }} />
+                <div key={i} onClick={() => setNewH({ ...newH, color: c as any })} style={{ width: 22, height: 22, borderRadius: "50%", background: c, border: newH.color === c ? `3px solid ${C.ink}` : "3px solid transparent", cursor: "pointer" }} />
               ))}
             </div>
             <div style={{ display: "flex", gap: 8 }}>
