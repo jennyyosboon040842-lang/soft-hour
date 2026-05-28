@@ -1264,7 +1264,7 @@ function MemoriesPage() {
       {/* view modal */}
       {viewing && (
         <div onClick={() => setViewing(null)} style={{ position: "fixed", inset: 0, background: "rgba(44,37,32,0.5)", display: "flex", alignItems: "center", justifyContent: "center", zIndex: 100 }}>
-          <Card style={{ width: 440, padding: 0, overflow: "hidden" }} onClick={(e) => e.stopPropagation()}>
+          <Card style={{ width: 440, padding: 0, overflow: "hidden" }} onClick={(e: any) => e.stopPropagation()}>
             {viewing.src
               ? <img src={viewing.src} alt={viewing.caption} style={{ width: "100%", maxHeight: 320, objectFit: "cover", display: "block" }} />
               : <div style={{ background: TAG_COLORS[viewing.tag] + "22", height: 200, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 64 }}>{TAG_EMOJIS[viewing.tag]}</div>
